@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-brr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>Construtora</h1>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-checkbox"
+        title="Toggle menu"
+      />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="side-menu">
+        <a href="/">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </header>
+    <main>
+      <section class="contato">
+        <div class="carde">
+          <div class="col esquerda">
+            <h2>Entre em Contato</h2>
+            <span class="linha1"></span>
+
+            <form class="formulario" action="/enviar-contato" method="post">
+              <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required />
+              </div>
+
+              <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required />
+              </div>
+
+              <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" />
+              </div>
+
+              <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+              </div>
+
+              <button type="submit" class="btn">Enviar</button>
+            </form>
+          </div>
+
+          <div class="col direita">
+            <h2>Nosso Endereço</h2>
+            <span class="linha1"></span>
+            <p class="rua">Rua Exemplo, 123, Cidade - Estado</p>
+
+            <div class="mapa">
+              <iframe
+                title="Mapa da localização"
+                src="https://www.google.com/maps?q=-11.341236,-37.857781&hl=pt-BR&z=15&output=embed"
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+
+            <ul class="infos">
+              <li>📞 Tel: (11) 1235-5678</li>
+              <li>🟢 WhatsApp: (11) 98765-4321</li>
+              <li>✉️ Email: contato@construtora.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Construtora. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
