@@ -1,13 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 const path = require("path");
 
 const app = express();
 
 // Configurações Nodemailer
-const EMAIL_CONSTRUTORA = "gabrieldinizsantos5@gmail.com";
-const SENHA_EMAIL = "hxuv vebm vvjh hzgd";
+const EMAIL_CONSTRUTORA = process.env.EMAIL_CONSTRUTORA;
+const SENHA_EMAIL = process.env.SENHA_EMAIL;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
